@@ -27,6 +27,19 @@ body:
       placeholder: Describe the project as concretely as you can.
     validations:
       required: true
+  - type: input
+    id: participants
+    attributes:
+      label: Participants
+      description: >
+        The GitHub handles of everyone working on this with you, e.g. `@alice, @bob`. You're
+        registered automatically as the author, so there's no need to list yourself. The bot
+        registers everyone it can alongside you; GitHub only lets it assign org members,
+        collaborators, and people who have commented on the issue, and the bot will name anyone it
+        couldn't add — they can register themselves afterwards by commenting `claim` on the issue.
+      placeholder: "@alice, @bob"
+    validations:
+      required: false
   - type: dropdown
     id: topics
     attributes:
@@ -172,7 +185,9 @@ body:
         ### That's it
 
         Submitting this form registers you — no extra step. The bot records your expiry from the field
-        above and comments to confirm.
+        above, registers the participants you listed, and comments to confirm.
 
         Renew any time by commenting `claim <your expiry>` before it lapses, and `disclaim` to release
-        it early once you're done or have moved on.
+        it early once you're done or have moved on. Any registered participant can renew or step back
+        the same way, and anyone you listed whom the bot couldn't register can add themselves by
+        commenting `claim` on the issue.
