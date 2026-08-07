@@ -49,20 +49,14 @@ If several people are working on the project, list their GitHub handles in the f
 registers everyone alongside you, and the board's Assignees column shows the whole team.
 
 GitHub only lets the bot assign members of the `leanprover-community` organisation, repository
-collaborators, and people who have already commented on the issue. If someone you listed falls
-outside those groups, the bot names them in its confirmation comment; they can register themselves
-by posting a comment saying `claim` on the issue — being listed in the form counts as your
-invitation, and the comment itself is what makes them assignable.
+collaborators, and people who have already commented on the issue. If someone you listed is not a member of 
+the `leanprover-community` or has not yet commented the issue, you will receive an alert in the confirmation comment; 
+in this case, they can register themselves by posting a comment saying `claim` on the issue — being listed in the form counts as your
+invitation, and after the comment they become participants.
 
-You can also invite people after registering: edit the issue body, add their handle under the
-`### Participants` heading, and have them comment `claim`. The bot reads the list at the moment
-they comment, so no other step is needed. Removing a handle from the list doesn't remove someone
-already registered — they step back themselves with `disclaim`, or a maintainer removes them.
-
-Every registered participant is a full holder of the registration: each can renew it
-(`claim <date>`), and each can step back (`disclaim`) without disturbing the others. The expiry is
-shared — when it lapses, the whole registration is released at once — and the intention returns to
-"Planned" only when the last participant leaves or the expiry runs out.
+To add participants after registering, edit the issue body, add their handle under the
+`### Participants` heading, and have them comment `claim`. Removing a handle from the list doesn't remove someone
+already registered, and a participant must comment `disclaim` to be removed (or a maintainer removes them).
 
 ## Expiry
 
