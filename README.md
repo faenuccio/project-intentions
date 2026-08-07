@@ -48,14 +48,15 @@ If several people are working on the project, list their GitHub handles in the f
 **Participants** field (e.g. `@alice, @bob`; you're included automatically as the author). The bot
 registers everyone alongside you, and the board's Assignees column shows the whole team.
 
-If someone you listed is not a member of 
-the `leanprover-community` or has not yet commented the issue, you will receive an alert in the confirmation comment; 
-in this case, they can register themselves by posting a comment saying `claim` on the issue — being listed in the form counts as your
-invitation, and after the comment they become participants.
+If someone you listed is not a member of the `leanprover-community` organization and has not
+commented on the issue, GitHub won't let the bot assign them. The confirmation comment says so and
+names them; they can register themselves by commenting `claim` on the issue, since being listed in
+the form counts as your invitation.
 
-To add participants after registering, edit the issue body, add their handle under the
-`### Participants` heading, and have them comment `claim`. Removing a handle from the list doesn't remove someone
-already registered, and a participant must comment `disclaim` to be removed (or a maintainer removes them).
+To add participants after registering, edit the issue body and add their handle under the
+`### Participants` heading (add the heading yourself if your issue predates the field), then have
+them comment `claim`. Removing a handle from the list doesn't remove someone already registered: a
+participant must comment `disclaim` to step back, or a maintainer can unassign them.
 
 ## Expiry
 
