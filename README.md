@@ -48,8 +48,7 @@ If several people are working on the project, list their GitHub handles in the f
 **Participants** field (e.g. `@alice, @bob`; you're included automatically as the author). The bot
 registers everyone alongside you, and the board's Assignees column shows the whole team.
 
-GitHub only lets the bot assign members of the `leanprover-community` organisation, repository
-collaborators, and people who have already commented on the issue. If someone you listed is not a member of 
+If someone you listed is not a member of 
 the `leanprover-community` or has not yet commented the issue, you will receive an alert in the confirmation comment; 
 in this case, they can register themselves by posting a comment saying `claim` on the issue — being listed in the form counts as your
 invitation, and after the comment they become participants.
