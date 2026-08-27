@@ -49,6 +49,22 @@ these issues: GitHub shows its editing controls (the `+` at the edge of each col
 accounts with write access to the project, and offers no setting that opens them to everyone.
 Registration goes through the issue form above, and the bot keeps the board in sync.
 
+### Registering as a group
+
+If several people are working on the project, list their GitHub handles in the form's
+**Participants** field (e.g. `@alice, @bob`; you're included automatically as the author). The bot
+registers everyone alongside you, and the board's Assignees column shows the whole team.
+
+If someone you listed is not a member of the `leanprover-community` organization and has not
+commented on the issue, GitHub won't let the bot assign them. The confirmation comment says so and
+names them; they can register themselves by commenting `claim` on the issue, since being listed in
+the form counts as your invitation.
+
+To add participants after registering, edit the issue body and add their handle under the
+`### Participants` heading (add the heading yourself if your issue predates the field), then have
+them comment `claim`. Removing a handle from the list doesn't remove someone already registered: a
+participant must comment `disclaim` to step back, or a maintainer can unassign them.
+
 ## Expiry
 
 - Default: **90 days** (about three months).
