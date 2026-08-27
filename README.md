@@ -35,12 +35,19 @@ It's brand new, and experimental. We'll see if people use it, and iterate as nee
 
 ## How to register
 
-1. Go to the [Project Intentions board](https://github.com/orgs/leanprover-community/projects/34) and click `Add Item` under any of the four main sections: "Planned", "In Progress", "In Review" or "Completed".
-1. In the field that opens at the bottom of your window, type the title of your project, and then "Create a New Issue"
-1. Without touching the "Repository" (it should remain `leanprover-community/project-intentions`), select `Project Intention` and fill the template. Say what you're working
+1. Open a [new project intention](https://github.com/leanprover-community/project-intentions/issues/new?template=project-intention.yml)
+   (the same form is reachable from this repository's **Issues** tab via **New issue**). Any GitHub
+   account can do this — no special access is needed.
+1. Complete the title after the `[Intention]` prefix, and fill in the template. Say what you're working
    on, whether it's public or private, the credible expiry date, and the other details the template
-   asks for. Submitting the form registers you — the bot reads your expiry and comments to confirm,
-   with no separate step.
+   asks for. Submitting the form registers you — the bot adds your intention to the
+   [board](https://github.com/orgs/leanprover-community/projects/34), reads your expiry, and comments
+   to confirm, with no separate step.
+
+Don't look for an "Add item" button on the board itself. The board is the public, read-only view of
+these issues: GitHub shows its editing controls (the `+` at the edge of each column) only to the few
+accounts with write access to the project, and offers no setting that opens them to everyone.
+Registration goes through the issue form above, and the bot keeps the board in sync.
 
 ## Expiry
 
