@@ -22,6 +22,14 @@ jobs:
     uses: leanprover-community/intentions/.github/workflows/intentions.yml@v1
     with:
       project-title: "Project Intentions"   # the exact title of the Projects v2 board
+      # This board renames the action's states, so every status option must be mapped explicitly —
+      # with the defaults (Unclaimed/Claimed/...) the bot finds no matching option and silently
+      # leaves new intentions statusless, unclaimed, and without a recorded expiry.
+      status-unclaimed: "Abandoned"          # free to be picked up (fresh, disclaimed, or expired)
+      status-claimed: "Planned"              # someone has registered themselves, with an expiry
+      status-in-progress: "In Progress"      # work is actively underway
+      status-in-review: "In Review"          # under review
+      status-completed: "Completed"          # finished or closed
       default-ttl: "90d"                     # three months (the action counts a month as 30 days)
       max-ttl: "180d"                        # six months
       auto-add-labels: "intention"           # only add issues opened via the template (which carries this label)
