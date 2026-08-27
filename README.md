@@ -35,7 +35,9 @@ It's brand new, and experimental. We'll see if people use it, and iterate as nee
 
 ## How to register
 
-1. Go to the [Project Intentions board](https://github.com/orgs/leanprover-community/projects/34) and decide to which of the main sections "Planned", "In Progress", "In Review" or "Completed" your intention belongs: then either click on the `+` icon on the top-right corner of the section, or hover with your mouse on the section to see a `+ Add Item` field appear, on which you can click.
+1. Go to the [Project Intentions board](https://github.com/orgs/leanprover-community/projects/34) and choose which main section ("Planned", "In Progress", "In Review" or "Completed") your intention belongs in.
+   - Click the `+` icon in the top right of that section, or
+   - Hover over the section and click the `+ Add Item` field when it appears.
 1. In the field that opens at the bottom of your window, type the title of your project, and then "Create a New Issue"
 1. Without touching the "Repository" (it should remain `leanprover-community/project-intentions`), select `Project Intention` and fill the template. Say what you're working
    on, whether it's public or private, the credible expiry date, and the other details the template
