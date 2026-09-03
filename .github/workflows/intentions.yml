@@ -40,6 +40,10 @@ jobs:
       participant-claim: true                # the author and listed participants may claim from any column
       status-commands: true                  # `progress` / `review` / `done` move a card without a PR
       enforce-holder: true                   # the sweep gives every card a column and an owner
+      # Cc'd on the comment the sweep leaves when it repairs a malformed card. These shapes come
+      # from board edits made by hand, so without this nobody learns they happened. Add handles here
+      # to widen it; the repo's 30 admins are inherited org-wide and are not all watching this board.
+      notify-maintainers: "faenuccio,kim-em"
       app-id: ${{ vars.INTENTIONS_BOT_APP_ID }}
     secrets:
       app-private-key: ${{ secrets.INTENTIONS_BOT_APP_PRIVATE_KEY }}
